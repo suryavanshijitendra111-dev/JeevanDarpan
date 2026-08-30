@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.JeevanDarpan" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/jeevan_green</item>
+        <item name="colorPrimaryVariant">@color/jeevan_dark</item>
+        <item name="colorSecondary">@color/jeevan_gold</item>
+        <item name="colorSecondaryVariant">@color/jeevan_gold</item>
+        <item name="colorError">#B3261E</item>
+        <item name="colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/jeevan_dark</item>
+        <item name="colorOnBackground">@color/jeevan_dark</item>
+        <item name="colorOnSurface">@color/jeevan_dark</item>
+    </style>
+</resources>
