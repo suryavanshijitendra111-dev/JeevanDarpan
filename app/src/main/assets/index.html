@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeevanDarpan - Vedic Astrology Kundli Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">JeevanDarpan</h1>
+            <p class="subtitle">Vedic Astrology Kundli Calculator</p>
+        </header>
+
+        <main class="content">
+            <section class="input-section">
+                <h2>Birth Information</h2>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birth-date">Birth Date</label>
+                        <input type="date" id="birth-date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birth-time">Birth Time (HH:MM)</label>
+                        <input type="time" id="birth-time">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birth-place">Birth Place (City)</label>
+                    <input type="text" id="birth-place" placeholder="Enter your birth city">
+                </div>
+
+                <button id="calculate-btn" class="btn btn-primary">Calculate Kundli</button>
+            </section>
+
+            <section id="result-section" class="result-section" style="display: none;">
+                <h2>Your Kundli</h2>
+                
+                <div class="kundli-grid">
+                    <div class="house" id="house-1">
+                        <div class="house-number">I</div>
+                        <div class="planets" id="planets-1"></div>
+                    </div>
+                    <div class="house" id="house-2">
+                        <div class="house-number">II</div>
+                        <div class="planets" id="planets-2"></div>
+                    </div>
+                    <div class="house" id="house-3">
+                        <div class="house-number">III</div>
+                        <div class="planets" id="planets-3"></div>
+                    </div>
+                    <div class="house" id="house-4">
+                        <div class="house-number">IV</div>
+                        <div class="planets" id="planets-4"></div>
+                    </div>
+                    <div class="house" id="house-5">
+                        <div class="house-number">V</div>
+                        <div class="planets" id="planets-5"></div>
+                    </div>
+                    <div class="house" id="house-6">
+                        <div class="house-number">VI</div>
+                        <div class="planets" id="planets-6"></div>
+                    </div>
+                    <div class="house" id="house-7">
+                        <div class="house-number">VII</div>
+                        <div class="planets" id="planets-7"></div>
+                    </div>
+                    <div class="house" id="house-8">
+                        <div class="house-number">VIII</div>
+                        <div class="planets" id="planets-8"></div>
+                    </div>
+                    <div class="house" id="house-9">
+                        <div class="house-number">IX</div>
+                        <div class="planets" id="planets-9"></div>
+                    </div>
+                    <div class="house" id="house-10">
+                        <div class="house-number">X</div>
+                        <div class="planets" id="planets-10"></div>
+                    </div>
+                    <div class="house" id="house-11">
+                        <div class="house-number">XI</div>
+                        <div class="planets" id="planets-11"></div>
+                    </div>
+                    <div class="house" id="house-12">
+                        <div class="house-number">XII</div>
+                        <div class="planets" id="planets-12"></div>
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <h3>Birth Details</h3>
+                    <div id="birth-details"></div>
+                </div>
+
+                <button class="btn btn-secondary" onclick="resetForm()">Calculate Again</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 JeevanDarpan. Vedic Astrology Foundation.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
